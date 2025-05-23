@@ -1,0 +1,504 @@
+div p {
+  color: red;
+}
+p {
+  color: blue;
+}
+.selector {
+  property: value;/* ini adalah deklarasi */
+}
+p {
+  color: red;
+  font-size: 16px;
+}
+selector {
+  property: value;
+}
+.parent {
+  font-size: 20px;
+}
+.child {
+  font-size: 1.5em;/* 30px */padding: 1em;/* 30px (karena 1em = font-size elemen ini) */}
+html {
+  font-size: 16px;/* Root font-size */}
+.box {
+  /* Properti individual */
+  animation-name: slide-in;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;/* start, end, both, none */
+  animation-direction: normal;/* reverse, alternate, alternate-reverse */
+  animation-iteration-count: 3;/* infinite untuk berulang terus */
+  animation-play-state: running;/* paused untuk menghentikan */
+
+/* Shorthand */
+  animation: slide-in 1s ease-out 0.5s forwards normal 3 running;
+  font-size: 1.5rem;/* 24px */margin: 2rem;/* 32px (2 × 16px) */
+
+/* Translate (bergeser) */
+  transform: translateX(20px);
+  transform: translateY(20px);
+  transform: translate(20px, 20px);
+
+/* Scale (mengubah ukuran) */
+  transform: scaleX(1.5);
+  transform: scaleY(0.5);
+  transform: scale(1.5, 0.5);
+
+/* Rotate (rotasi) */
+  transform: rotate(45deg);
+  transform: rotateX(45deg);
+  transform: rotateY(45deg);
+  transform: rotateZ(45deg);
+
+/* Skew (memiringkan) */
+  transform: skewX(10deg);
+  transform: skewY(10deg);
+  transform: skew(10deg, 20deg);
+
+/* Kombinasi transformasi */
+  transform: translate(20px, 20px) rotate(45deg) scale(1.5);
+
+/* Mengubah origin transformasi */
+  transform-origin: center;/* Default */
+  transform-origin: top left;
+  transform-origin: 50% 50%;
+  transform-origin: 0 0;
+
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+
+/* Properti individual */
+  transition-property: width, background-color;
+  transition-duration: 0.5s, 1s;
+  transition-timing-function: ease, linear;
+  transition-delay: 0s, 0.2s;
+
+/* Shorthand */
+  transition: width 0.5s ease 0s, background-color 1s linear 0.2s;
+}
+
+.box:hover {
+  width: 200px;
+  background-color: red;}
+ p {
+  color: blue;
+}
+p {
+  color: blue;
+}
+#nama-id {
+  background-color: yellow;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+div p {
+  color: red;
+}
+h1 + p {
+  font-weight: bold;
+}
+p {
+  color: blue;
+}
+.nama-class {
+  font-size: 18px;
+}
+#nama-id {
+  background-color: yellow;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+div p {
+  color: red;
+}
+div > p {
+  color: green;
+}
+h1 + p {
+  font-weight: bold;
+}
+div p {
+  color: red;
+}
+css
+h1 + p {
+  font-weight: bold;
+}
+a:link {
+  color: blue;
+}
+a:hover {
+  text-decoration: underline;
+}
+p:first-of-type {
+  font-weight: bold;
+}
+p:last-of-type {
+  font-style: italic;
+}
+p::first-letter {
+  font-size: 200%;
+  font-weight: bold;
+}
+p::first-line {
+  color: darkblue;
+}
+h2::before {
+  content: "≫ ";
+}
+h2::after {
+  content: " ≪";
+}
+[disabled] {
+  opacity: 0.5;
+}
+[type="text"] {
+  border: 1px solid gray;}
+
+[href^="https"] {
+  color: green;
+}
+[src$=".jpg"] {
+  border: 1px solid black;
+}
+[title*="gambar"] {
+  cursor: pointer;
+}
+.box-content {
+  box-sizing: content-box;
+}
+.box-border {
+  box-sizing: border-box;
+}
+
+div {
+  padding: 10px;
+
+  padding: 10px 20px 15px 25px;
+
+  padding: 10px 20px;
+
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+  padding-left: 25px;
+}
+div {
+  border: 1px solid black;
+
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+
+  border-top: 2px dashed red;
+  border-right: 3px double green;
+  border-bottom: 4px groove blue;
+  border-left: 5px ridge yellow;
+
+  border-radius: 10px;
+  border-radius: 10px 20px 30px 40px;
+
+  position: static;
+  position: relative;
+  position: absolute;
+  position: fixed;
+  position: sticky;
+
+  margin: 10px;
+  margin: 10px 20px 15px 25px;
+  margin: 10px 20px;
+
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-bottom: 15px;
+  margin-left: 25px;
+
+  margin-top: -10px;
+
+  margin: 0 auto;
+
+  position: relative;
+  top: 20px;/* 20px dari atas posisi normalnya */
+  right: 30px;/* 30px dari kanan posisi normalnya */
+  bottom: 10px;/* 10px dari bawah posisi normalnya */
+  left: 15px;/* 15px dari kiri posisi normalnya */
+
+  display: block;/* Elemen block (default untuk div) */
+  display: inline;/* Elemen inline (default untuk span) */
+  display: inline-block;/* Inline, tapi bisa memiliki width dan height */
+  display: none;/* Elemen tidak ditampilkan dan tidak mengambil tempat */
+  display: flex;/* Flexbox container */
+  display: grid;/* Grid container */
+
+  visibility: visible;/* Default */
+  visibility: hidden;/* Tidak terlihat tapi tetap mengambil tempat *//* Bandingkan dengan display: none yang tidak mengambil tempat */
+  overflow: visible;/* Default: konten akan keluar dari container */
+  overflow: hidden;/* Konten yang keluar akan dipotong */
+  overflow: scroll;/* Selalu menampilkan scrollbar */
+  overflow: auto;/* Menampilkan scrollbar hanya jika diperlukan */
+
+
+  overflow-x: auto;
+  overflow-y: hidden 
+  /* Dapat dispesifikkan untuk arah horizontal atau vertikal */
+}
+
+.di-belakang {
+  z-index: 1;
+}
+
+.di-depan {
+  z-index: 2;/* Nilai lebih tinggi akan ditampilkan di depan */
+}
+
+.container {
+  display: flex;/* atau inline-flex */
+
+/* Arah utama */
+  flex-direction: row;/* Default: horizontal dari kiri ke kanan */
+  flex-direction: row-reverse;/* Horizontal dari kanan ke kiri */
+  flex-direction: column;/* Vertikal dari atas ke bawah */
+  flex-direction: column-reverse;/* Vertikal dari bawah ke atas */
+
+/* Wrap items */
+  flex-wrap: nowrap;/* Default: semua item dalam satu baris */
+  flex-wrap: wrap;/* Items wrap ke baris berikutnya jika perlu */
+  flex-wrap: wrap-reverse;/* Items wrap ke baris sebelumnya */
+
+/* Shorthand untuk flex-direction dan flex-wrap */
+  flex-flow: row wrap;
+
+/* Alignment sepanjang main axis */
+  justify-content: flex-start;/* Default: items di awal container */
+  justify-content: flex-end;/* Items di akhir container */
+  justify-content: center;/* Items di tengah container */
+  justify-content: space-between;/* Items didistribusikan merata (ujung-ujung merapat) */
+  justify-content: space-around;/* Items dengan margin yang sama di sekitarnya */
+  justify-content: space-evenly;/* Items dengan margin yang sama antar semuanya */
+
+/* Alignment sepanjang cross axis */
+  align-items: stretch;/* Default: items mengisi tinggi container */
+  align-items: flex-start;/* Items di awal cross-axis */
+  align-items: flex-end;/* Items di akhir cross-axis */
+  align-items: center;/* Items di tengah cross-axis */
+  align-items: baseline;/* Items sejajar dengan baseline text */
+
+/* Alignment untuk multiple lines */
+  align-content: flex-start;/* Lines packed to start of container */
+  align-content: flex-end;/* Lines packed to end of container */
+  align-content: center;/* Lines packed to center of container */
+  align-content: space-between;/* Lines evenly distributed with first/last at edges */
+  align-content: space-around;/* Lines evenly distributed with equal space around */
+  align-content: stretch;/* Default: lines stretch to fill container */
+
+   display: grid;/* atau inline-grid */
+
+/* Mendefinisikan kolom */
+  grid-template-columns: 100px 200px 100px;/* 3 kolom dengan ukuran tetap */
+  grid-template-columns: 1fr 2fr 1fr;/* 3 kolom dengan rasio fleksibel */
+  grid-template-columns: repeat(3, 1fr);/* 3 kolom dengan ukuran sama */
+  grid-template-columns: minmax(100px, 1fr);/* Minimum 100px, maksimum 1fr */
+  grid-template-columns: auto 1fr auto;/* Auto-size, fleksibel, auto-size */
+
+/* Mendefinisikan baris */
+  grid-template-rows: 50px 100px;/* 2 baris dengan ukuran tetap */
+  grid-template-rows: repeat(3, minmax(100px, auto));/* 3 baris minimal 100px */
+
+/* Gap antar elemen */
+  column-gap: 10px;
+  row-gap: 15px;
+  gap: 15px 10px;/* row-gap column-gap */
+  gap: 10px;/* Sama untuk row dan column */
+
+/* Alignment items horizontal dalam cell */
+  justify-items: stretch;/* Default: items mengisi lebar cell */
+  justify-items: start;/* Items di awal cell */
+  justify-items: end;/* Items di akhir cell */
+  justify-items: center;/* Items di tengah cell */
+
+/* Alignment items vertikal dalam cell */
+  align-items: stretch;/* Default: items mengisi tinggi cell */
+  align-items: start;/* Items di awal cell */
+  align-items: end;/* Items di akhir cell */
+  align-items: center;/* Items di tengah cell */
+
+/* Shorthand untuk justify-items dan align-items */
+  place-items: center;/* center center */
+  place-items: start end;/* start end */
+
+/* Alignment seluruh grid dalam container */
+  justify-content: start;/* Default: grid di awal container */
+  justify-content: end;/* Grid di akhir container */
+  justify-content: center;/* Grid di tengah container */
+  justify-content: stretch;/* Grid mengisi lebar container */
+  justify-content: space-around;/* Kolom dengan space di sekitarnya */
+  justify-content: space-between;/* Kolom di ujung-ujung container */
+  justify-content: space-evenly;/* Kolom dengan space yang sama */
+
+  align-content: start;/* Grid di awal container */
+  align-content: end;/* Grid di akhir container */
+  align-content: center;/* Grid di tengah container */
+  align-content: stretch;/* Default: grid mengisi tinggi container */
+  align-content: space-around;/* Baris dengan space di sekitarnya */
+  align-content: space-between;/* Baris di ujung-ujung container */
+  align-content: space-evenly;/* Baris dengan space yang sama */
+
+/* Shorthand untuk justify-content dan align-content */
+  place-content: center;/* center center */
+  place-content: start end;/* start end */
+
+/* Grid template areas */
+  grid-template-areas:
+    "header header header"
+    "sidebar content content"
+    "footer footer footer";
+}
+.item {
+/* Urutan item */
+  order: 0;/* Default: 0, nilai lebih kecil tampil lebih dulu */
+
+/* Fleksibilitas item */
+  flex-grow: 0;/* Default: 0, item tidak tumbuh */
+  flex-shrink: 1;/* Default: 1, item menyusut jika perlu */
+  flex-basis: auto;/* Default: auto, ukuran awal sesuai konten */
+
+/* Shorthand untuk flex-grow, flex-shrink, dan flex-basis */
+  flex: 0 1 auto;/* Default */
+  flex: 1;/* flex: 1 1 0% - item akan tumbuh dan menyusut */
+
+/* Self-alignment (override align-items) */
+  align-self: auto;/* Default: ikuti align-items container */
+  align-self: flex-start;/* Item di awal cross-axis */
+  align-self: flex-end;/* Item di akhir cross-axis */
+  align-self: center;/* Item di tengah cross-axis */
+  align-self: baseline;/* Item sejajar dengan baseline text */
+  align-self: stretch;/* Item mengisi tinggi container */
+
+  /* Penempatan item dengan nomor grid line */
+  grid-column-start: 1;
+  grid-column-end: 3;/* atau grid-column-end: span 2; */
+  grid-row-start: 1;
+  grid-row-end: 3;/* atau grid-row-end: span 2; */
+
+/* Shorthand */
+  grid-column: 1 / 3;/* start / end */
+  grid-column: 1 / span 2;
+  grid-row: 1 / 3;
+  grid-row: 1 / span 2;
+
+/* Shorthand untuk grid-row dan grid-column */
+  grid-area: 1 / 1 / 3 / 3;/* row-start / column-start / row-end / column-end */
+
+/* Menempatkan item dalam named template area */
+  grid-area: header;/* Sesuai dengan nama di grid-template-areas */
+
+/* Self-alignment dalam cell (override justify-items/align-items) */
+  justify-self: stretch;/* Default: mengisi lebar cell */
+  justify-self: start;/* Item di awal cell */
+  justify-self: end;/* Item di akhir cell */
+  justify-self: center;/* Item di tengah cell secara horizontal */
+
+  align-self: stretch;/* Default: mengisi tinggi cell */
+  align-self: start;/* Item di awal cell */
+  align-self: end;/* Item di akhir cell */
+  align-self: center;/* Item di tengah cell secara vertikal */
+
+/* Shorthand untuk justify-self dan align-self */
+  place-self: center;/* center center */
+  place-self: start end;/* start end */
+}
+
+
+body {
+  background-color: lightblue;
+  font-size: 16px;
+}
+
+/* Untuk layar dengan lebar maksimal 600px */
+@media screen and (max-width: 600px) {
+  body {
+    background-color: lightgreen;
+    font-size: 14px;
+  }
+}
+
+/* Untuk layar dengan lebar minimal 992px */
+@media screen and (min-width: 992px) {
+  body {
+    background-color: lavender;
+    font-size: 18px;
+  }
+}
+
+/* Untuk orientasi landscape */
+@media (orientation: landscape) {
+  .container {
+    flex-direction: row;
+  }
+}
+
+/* Untuk orientasi portrait */
+@media (orientation: portrait) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+/* Kombinasi beberapa kondisi */
+@media screen and (min-width: 600px) and (max-width: 992px) {
+  body {
+    background-color: lightgoldenrodyellow;
+  }
+}
+
+body {
+/* Relatif terhadap font size dari root element */
+  font-size: 1rem;
+
+/* Relatif terhadap viewport */
+  width: 80vw;/* 80% dari lebar viewport */
+  height: 50vh;/* 50% dari tinggi viewport */
+  padding: 5vmin;/* 5% dari ukuran viewport terkecil (width atau height) */
+}
+
+img {
+  max-width: 100%;/* Image tidak lebih besar dari container */
+  height: auto;/* Mempertahankan rasio aspek */
+}
+
+:root {
+  --font-size-base: 16px;
+  --main-color: #3498db;
+}
+
+body {
+  font-size: var(--font-size-base);
+  color: var(--main-color);
+}
+
+@media (max-width: 600px) {
+  :root {
+    --font-size-base: 14px;
+    --main-color: #2980b9;
+  }
+}
+@keyframes slide-in {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+

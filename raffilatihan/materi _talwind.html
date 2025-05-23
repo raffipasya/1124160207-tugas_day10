@@ -1,0 +1,236 @@
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CSS Contoh</title>
+  <style>
+    /* ### BOX MODEL ### */
+    .box-model {
+      width: 200px; /* Lebar konten */
+      padding: 20px; /* Ruang dalam elemen */
+      border: 5px solid #333; /* Garis tepi */
+      margin: 20px; /* Jarak luar antar elemen */
+      background-color: #f0f0f0; /* Warna latar */
+    }
+
+    /* ### POSITIONING ### */
+    .positioning-container {
+      position: relative; /* Referensi untuk elemen yang posisinya absolut */
+      height: 200px;
+      border: 1px solid #aaa;
+    }
+
+    .positioned-box {
+      position: absolute; /* Ditempatkan relatif terhadap container */
+      top: 20px;
+      right: 20px;
+      width: 100px;
+      height: 100px;
+      background-color: salmon;
+    }
+
+    /* ### DISPLAY DAN LAYOUT ### */
+    .inline-box {
+      display: inline-block; /* Elemen bisa berdampingan, tapi masih bisa diberi ukuran */
+      width: 100px;
+      height: 100px;
+      background-color: lightblue;
+      margin: 5px;
+    }
+
+    /* ### FLEXBOX ### */
+    .flex-container {
+      display: flex; /* Mengaktifkan Flexbox */
+      gap: 10px; /* Jarak antar item */
+      justify-content: center; /* Rata tengah horizontal */
+      background-color: #eee;
+      padding: 10px;
+    }
+
+    .flex-item {
+      background-color: #8bc34a;
+      padding: 20px;
+      color: white;
+    }
+
+    /* ### CSS GRID ### */
+    .grid-container {
+      display: grid; /* Mengaktifkan Grid layout */
+      grid-template-columns: repeat(3, 1fr); /* 3 kolom dengan lebar sama */
+      gap: 10px;
+      background-color: #fafafa;
+      padding: 10px;
+    }
+
+    .grid-item {
+      background-color: #03a9f4;
+      padding: 20px;
+      color: white;
+    }
+
+    /* ### RESPONSIVE DESIGN ### */
+    .responsive-box {
+      width: 100%;
+      max-width: 600px; /* Maksimum lebar */
+      margin: auto;
+      background-color: #ffc107;
+      padding: 20px;
+      color: black;
+    }
+
+    @media (max-width: 600px) {
+      .responsive-box {
+        background-color: #ff5722; /* Warna berubah jika layar kecil */
+        color: white;
+      }
+    }
+
+    /* ### TRANSFORMASI DAN ANIMASI ### */
+    .animated-box {
+      width: 100px;
+      height: 100px;
+      background-color: purple;
+      margin: 20px auto;
+      transition: transform 0.5s; /* Animasi perubahan transform */
+    }
+
+    .animated-box:hover {
+      transform: rotate(15deg) scale(1.2); /* Efek rotasi dan perbesaran saat hover */
+    }
+	  
+	  /* ### Pagination ### */ 
+	   .visuallyhidden {
+			  border: 0;
+			  clip: rect(0 0 0 0);
+			  height: auto;
+			  margin: 0;
+			  overflow: hidden;
+			  padding: 0;
+			  position: absolute;
+			  width: 1px;
+			  white-space: nowrap;
+			}
+
+			nav {
+			  border-top: 1px solid #eee;
+			  margin-top: 1em;
+			  padding-top: 0.5em;
+			  font: 1.2em sans-serif;
+			
+			  display: flex;
+			  justify-content: center;
+			}
+
+			.pagination {
+			  list-style: none;
+			  margin: 0;
+			  padding: 0;
+			  display: flex;
+			}
+
+			.pagination li {
+			  margin: 0 1px;
+			}
+			
+			.pagination a {
+			  display: block;
+			  padding: 0.5em 1em;
+			  border: 1px solid #999;
+			  border-radius: 0.2em;
+			  text-decoration: none;
+			}
+			
+			.pagination a[aria-current="page"] {
+			  background-color: #333;
+			  color: #fff;
+			}
+			
+  </style>
+</head>
+<body>
+
+  <h1>Contoh Materi CSS Lengkap</h1>
+
+  <!-- BOX MODEL -->
+  <h2>1. Box Model</h2>
+  <div class="box-model">
+    Ini contoh Box Model. Ada padding, border, dan margin.
+  </div>
+
+  <!-- POSITIONING -->
+  <h2>2. Positioning</h2>
+  <div class="positioning-container">
+    <div class="positioned-box">Posisi Absolut</div>
+  </div>
+
+  <!-- DISPLAY DAN LAYOUT -->
+  <h2>3. Display dan Layout</h2>
+  <div class="inline-box">Box 1</div>
+  <div class="inline-box">Box 2</div>
+
+  <!-- FLEXBOX -->
+  <h2>4. Flexbox</h2>
+  <div class="flex-container">
+    <div class="flex-item">Flex 1</div>
+    <div class="flex-item">Flex 2</div>
+    <div class="flex-item">Flex 3</div>
+  </div>
+
+  <!-- CSS GRID -->
+  <h2>5. CSS Grid</h2>
+  <div class="grid-container">
+    <div class="grid-item">Grid 1</div>
+    <div class="grid-item">Grid 2</div>
+    <div class="grid-item">Grid 3</div>
+  </div>
+
+  <!-- RESPONSIVE DESIGN -->
+  <h2>6. Responsive Design</h2>
+  <div class="responsive-box">
+    Ubah ukuran jendela browser untuk melihat perubahan warna!
+  </div>
+
+  <!-- TRANSFORMASI DAN ANIMASI -->
+  <h2>7. Transformasi dan Animasi</h2>
+  <div class="animated-box"></div>
+  
+  <!-- Pagination --> 
+  
+  <nav aria-label="pagination">
+  <ul class="pagination">
+    <li>
+      <a href="">
+        <span aria-hidden="true">&laquo;</span>
+        <span class="visuallyhidden">previous set of pages</span>
+      </a>
+    </li>
+    <li>
+      <a href=""><span class="visuallyhidden">page </span>1</a>
+    </li>
+    <li>
+      <a href="" aria-current="page">
+        <span class="visuallyhidden">page </span>2
+      </a>
+    </li>
+    <li>
+      <a href=""> <span class="visuallyhidden">page </span>3 </a>
+    </li>
+    <li>
+      <a href=""> <span class="visuallyhidden">page </span>4 </a>
+    </li>
+    <li>
+      <a href="">
+        <span class="visuallyhidden">next set of pages</span
+        ><span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+
+</body>
+</html>
+
+    
+</body>
+</html>
